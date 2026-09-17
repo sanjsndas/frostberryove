@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About • Frostberry Oven Lane</title>
+  <meta name="description" content="About Frostberry Oven Lane — an independent recipe blog by Maren Ellison. Seasonal, tested recipes and kitchen stories from a tiny oven on a quiet lane.">
+  <link rel="canonical" href="https://frostberryovenlane.com/about.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="About • Frostberry Oven Lane">
+  <meta property="og:description" content="Seasonal, tested recipes and kitchen stories from a tiny oven on a quiet lane.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://frostberryovenlane.com/about.html">
+  <meta property="og:image" content="https://frostberryovenlane.com/images/oven-lane-hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Frostberry Oven Lane",
+    "url": "https://frostberryovenlane.com/about.html",
+    "description": "About page for Frostberry Oven Lane, a seasonal recipe blog by Maren Ellison.",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Maren Ellison",
+      "jobTitle": "Recipe developer and writer",
+      "description": "Maren Ellison is a recipe developer and writer based in the Pacific Northwest."
+    }
+  }
+  </script>
+  <!-- Google Fonts: editorial serif + clean sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:opsz,wght@14..32,300..600;14..32,400..500&display=swap" rel="stylesheet">
+  <style>
+    /* ----- reset & base (same as original) ----- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #fcf9f5;
+      color: #1e1c1a;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      font-weight: 400;
+      line-height: 1.6;
+      font-size: 1rem;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'DM Serif Display', Georgia, 'Times New Roman', serif;
+      font-weight: 400;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      color: #1e1c1a;
+    }
+
+    h1 { font-size: 2.6rem; }
+    h2 { font-size: 1.9rem; margin-bottom: 0.75rem; }
+    h3 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+    h4 { font-size: 1.15rem; }
+
+    a {
+      color: #1e1c1a;
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    a:hover {
+      color: #a5512e;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* ----- containers & layout ----- */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ----- header (same as original) ----- */
+    .site-header {
+      border-bottom: 1px solid #e5dfd7;
+      padding: 1.2rem 0;
+      background: #fcf9f5;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.9rem;
+      letter-spacing: -0.02em;
+      color: #1e1c1a;
+      line-height: 1.1;
+    }
+
+    .logo span {
+      display: block;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #9a7f6b;
+      margin-top: 0.2rem;
+      font-weight: 400;
+    }
+
+    .main-nav ul {
+      display: flex;
+      gap: 1.8rem;
+      list-style: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+    }
+
+    .main-nav a {
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      letter-spacing: 0.06em;
+      color: #3d3732;
+    }
+
+    .main-nav a:hover {
+      color: #a5512e;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background: #f1ece6;
+      border-radius: 30px;
+      padding: 0.3rem 0.8rem;
+      border: 1px solid #e0d8ce;
+    }
+
+    .search-bar input {
+      background: transparent;
+      border: none;
+      padding: 0.4rem 0.4rem 0.4rem 0;
+      font-size: 0.9rem;
+      font-family: 'Inter', sans-serif;
+      outline: none;
+      width: 170px;
+      color: #1e1c1a;
+    }
+
+    .search-bar input::placeholder {
+      color: #9a8b7e;
+      font-style: italic;
+    }
+
+    .search-bar button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1.1rem;
+      color: #6b5d52;
+      padding: 0 0.2rem;
+    }
+
+    /* ----- ABOUT PAGE specific ----- */
+    .about-hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+      background: #ffffff;
+      border: 1px solid #eae3db;
+      border-radius: 24px;
+      padding: 2.5rem;
+      margin: 2.5rem 0 3rem;
+    }
+
+    .about-hero-text h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      line-height: 1.1;
+    }
+
+    .about-hero-text .lead {
+      font-size: 1.15rem;
+      color: #4a423c;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+
+    .about-hero-text p {
+      color: #5c534c;
+      margin-bottom: 1rem;
+    }
+
+    .about-hero-img {
+      border-radius: 16px;
+      overflow: hidden;
+      background: #ddd2c6;
+      aspect-ratio: 4/5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .about-hero-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .about-signature {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.6rem;
+      color: #a5512e;
+      margin-top: 1.5rem;
+      font-style: italic;
+    }
+
+    /* Values grid */
+    .values-section {
+      margin: 3.5rem 0;
+    }
+
+    .values-section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .value-card {
+      background: #ffffff;
+      border: 1px solid #ede7e0;
+      border-radius: 16px;
+      padding: 2rem 1.8rem;
+      transition: border-color 0.15s, box-shadow 0.2s;
+    }
+
+    .value-card:hover {
+      border-color: #d8cfc5;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.02);
+    }
+
+    .value-icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .value-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .value-card p {
+      font-size: 0.95rem;
+      color: #5c534c;
+    }
+
+    /* Story section */
+    .story-section {
+      background: #ffffff;
+      border: 1px solid #eae3db;
+      border-radius: 20px;
+      padding: 2.5rem 3rem;
+      margin: 3rem 0;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    .story-section h2 {
+      margin-bottom: 1rem;
+    }
+
+    .story-section p {
+      color: #4a423c;
+      margin-bottom: 1rem;
+    }
+
+    .story-section blockquote {
+      border-left: 4px solid #d4b9a8;
+      padding-left: 1.5rem;
+      margin: 1.8rem 0;
+      font-style: italic;
+      color: #3d3732;
+      font-size: 1.1rem;
+    }
+
+    .story-img {
+      border-radius: 14px;
+      overflow: hidden;
+      background: #ddd2c6;
+      aspect-ratio: 3/4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .story-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Behind the scenes / gallery */
+    .gallery-section {
+      margin: 3.5rem 0;
+    }
+
+    .gallery-section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+    }
+
+    .gallery-item {
+      border-radius: 12px;
+      overflow: hidden;
+      background: #ddd2c6;
+      aspect-ratio: 1/1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* FAQ mini / contact CTA */
+    .about-cta {
+      background: #f5efe9;
+      border-radius: 24px;
+      padding: 3rem 2rem;
+      margin: 3.5rem 0;
+      text-align: center;
+      border: 1px solid #e6ddd4;
+    }
+
+    .about-cta h2 {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .about-cta p {
+      max-width: 550px;
+      margin: 0 auto 1.5rem;
+      color: #5c534c;
+    }
+
+    .about-cta .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 2rem;
+      border-radius: 50px;
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: all 0.15s;
+      font-family: 'Inter', sans-serif;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary {
+      background: #1e1c1a;
+      color: #ffffff;
+    }
+
+    .btn-primary:hover {
+      background: #a5512e;
+      color: #ffffff;
+    }
+
+    .btn-secondary {
+      background: transparent;
+      border: 1px solid #1e1c1a;
+      color: #1e1c1a;
+    }
+
+    .btn-secondary:hover {
+      background: #1e1c1a;
+      color: #ffffff;
+    }
+
+    /* ----- footer (same as original) ----- */
+    .site-footer {
+      background: #1e1c1a;
+      color: #d9d2cb;
+      padding: 3rem 0 2rem;
+      margin-top: 3rem;
+      font-size: 0.85rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+    }
+
+    .footer-col h4 {
+      color: #fcf9f5;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      font-family: 'DM Serif Display', serif;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-col a {
+      color: #b8aca1;
+    }
+
+    .footer-col a:hover {
+      color: #e6d9ce;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #3b3530;
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.75rem;
+      color: #9a8b7e;
+    }
+
+    /* ----- responsive ----- */
+    @media (max-width: 950px) {
+      .about-hero {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+      }
+      .about-hero-img {
+        aspect-ratio: 4/3;
+        order: -1;
+      }
+      .values-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .story-section {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+      }
+      .story-img {
+        aspect-ratio: 4/3;
+        order: -1;
+      }
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.6rem; }
+
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .main-nav ul {
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .values-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .search-bar input {
+        width: 120px;
+      }
+
+      .about-hero-text h1 {
+        font-size: 2rem;
+      }
+
+      .story-section {
+        padding: 1.5rem;
+      }
+
+      .about-cta {
+        padding: 2rem 1.5rem;
+      }
+
+      .cta-buttons .btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    .main-nav a.active {
+      color: #a5512e;
+      font-weight: 600;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+  </style>
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        Frostberry Oven Lane
+        <span>recipes & kitchen stories</span>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html">Categories</a></li>
+        </ul>
+      </nav>
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search recipes..." aria-label="Search recipes">
+        <button id="searchBtn" aria-label="Search">⌕</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== MAIN ========== -->
+  <main class="container">
+    <!-- ABOUT HERO -->
+    <section class="about-hero">
+      <div class="about-hero-text">
+        <h1>About Frostberry Oven Lane</h1>
+        <p class="lead">Seasonal, tested recipes and kitchen stories from a tiny oven on a quiet lane in the Pacific Northwest.</p>
+        <p>I'm Maren Ellison, a recipe developer and writer. I started this blog in 2018 as a way to document the food I was cooking in a drafty apartment kitchen — the successes, the failures, and the meals that tasted like home.</p>
+        <p>Frostberry Oven Lane is not a polished production. It's a real kitchen with real constraints: a small oven, a limited counter, and a sourdough starter that sometimes gets neglected. But it's also a place where I've learned that good food doesn't require perfection — just curiosity, a little patience, and a willingness to try again.</p>
+        <p>Every recipe here is tested at least twice in my home kitchen, and many are tested by volunteer readers before they're published. I write about what I actually cook: seasonal vegetables, simple baking projects, and dinners that come together after a long day.</p>
+        <div class="about-signature">— Maren</div>
+      </div>
+      <div class="about-hero-img">
+        <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=1000&auto=format&fit=crop" alt="Maren Ellison in her kitchen, holding a wooden spoon" loading="eager">
+      </div>
+    </section>
+
+    <!-- VALUES -->
+    <section class="values-section">
+      <h2>What I believe</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <span class="value-icon">🌾</span>
+          <h3>Seasonal first</h3>
+          <p>I cook with what's growing, what's at the market, and what's in the pantry. Seasons shape the recipes here — you'll find tomato confit in August and braised beans in January.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">🧪</span>
+          <h3>Tested, not guessed</h3>
+          <p>Every recipe is tested at least twice. I note substitutions, weights, and the small details that make a difference. If something didn't work, I'll tell you.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">🏡</span>
+          <h3>Real kitchens only</h3>
+          <p>No professional equipment, no impossible techniques. Just a home oven, a few good pans, and a belief that cooking should be approachable and satisfying.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORY / NAME -->
+    <section class="story-section">
+      <div class="story-text">
+        <h2>Why "Frostberry Oven Lane"?</h2>
+        <p>Behind my house, there's a narrow lane that runs along the edge of a small woodland. In late summer, wild blackberry bushes grow thick along the fence — the kind of berries that are sweet, tart, and stubbornly resilient. My neighbor calls them frostberries, because they hold on until the first frost.</p>
+        <p>When I was trying to name this blog, I kept coming back to that lane. It felt like the right metaphor for what I wanted to do here: use what's around you, cook with what's in season, and find beauty in the ordinary.</p>
+        <blockquote>“The name is a reminder that good food doesn't have to be fancy. It just has to be made with attention.”</blockquote>
+        <p>The "oven" part is literal. My kitchen has a small, temperamental oven that runs a little hot. I've learned to work with it, and most of the recipes here are written for ovens like mine — imperfect, real, and entirely capable of making something delicious.</p>
+      </div>
+      <div class="story-img">
+        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=1000&auto=format&fit=crop" alt="A quiet lane with wild blackberry bushes" loading="lazy">
+      </div>
+    </section>
+
+    <!-- GALLERY / BEHIND THE SCENES -->
+    <section class="gallery-section">
+      <h2>Behind the scenes</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1556911220-0a1a1f4b0a3c?q=80&w=600&auto=format&fit=crop" alt="Sourdough starter bubbling in a glass jar" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?q=80&w=600&auto=format&fit=crop" alt="Freshly baked bread cooling on a wire rack" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?q=80&w=600&auto=format&fit=crop" alt="Hands kneading dough on a floured counter" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1506368249639-73a05d6f6488?q=80&w=600&auto=format&fit=crop" alt="A bowl of fresh tomatoes and herbs" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="about-cta">
+      <h2>Let's cook together</h2>
+      <p>Whether you're here for a specific recipe, a baking guide, or just a story about a failed loaf of bread — I'm glad you're here. The best way to keep up is the Sunday Oven Letter, a weekly email with a new recipe and a kitchen note.</p>
+      <div class="cta-buttons">
+        <a href="#" class="btn btn-primary" id="ctaNewsletter">Subscribe to the newsletter</a>
+        <a href="contact.html" class="btn btn-secondary">Get in touch</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Frostberry Oven Lane</h4>
+          <p style="color:#b8aca1; font-size:0.85rem; line-height:1.5;">Seasonal recipes and kitchen stories from a small oven on a quiet lane.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Baking</a></li>
+            <li><a href="categories.html">Dinner</a></li>
+            <li><a href="categories.html">Seasonal</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Information</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">Substack</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Frostberry Oven Lane. All rights reserved.</span>
+        <span>Made with flour, butter, and patience.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT (minimal, for search + newsletter) ========== -->
+  <script>
+    (function() {
+      // Newsletter CTA scrolls to footer form? No form on this page, so we'll just show a friendly message.
+      const ctaNewsletter = document.getElementById('ctaNewsletter');
+      if (ctaNewsletter) {
+        ctaNewsletter.addEventListener('click', function(e) {
+          e.preventDefault();
+          // Since there's no newsletter form on the about page, we can either redirect to home or show an alert.
+          // For a real site, you might link to a signup page. Here, we'll simulate a gentle prompt.
+          alert('Thanks for your interest! You can subscribe to the Sunday Oven Letter on the home page. 🌿');
+        });
+      }
+
+      // Simple search interaction (just a placeholder, since the main blog has full search)
+      const searchInput = document.getElementById('searchInput');
+      const searchBtn = document.getElementById('searchBtn');
+
+      function handleSearch() {
+        const term = searchInput.value.trim();
+        if (term) {
+          // Redirect to home page with search query (in a real implementation, you might use a query param)
+          // For this static demo, we'll just alert.
+          alert('Search is available on the home page. Redirecting you there with your query: "' + term + '"');
+          // In a real setup, you'd do: window.location.href = 'index.html?search=' + encodeURIComponent(term);
+        } else {
+          searchInput.focus();
+        }
+      }
+
+      if (searchBtn) {
+        searchBtn.addEventListener('click', handleSearch);
+      }
+      if (searchInput) {
+        searchInput.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter') {
+            e.preventDefault();
+            handleSearch();
+          }
+        });
+      }
+
+      // Set active nav link (already set in HTML, but just in case)
+      document.querySelectorAll('.main-nav a').forEach(link => {
+        if (link.getAttribute('href') === 'about.html') {
+          link.classList.add('active');
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

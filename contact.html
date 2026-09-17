@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact • Frostberry Oven Lane</title>
+  <meta name="description" content="Get in touch with Frostberry Oven Lane — questions, recipe feedback, or brand partnerships. I'd love to hear from you.">
+  <link rel="canonical" href="https://frostberryovenlane.com/contact.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact • Frostberry Oven Lane">
+  <meta property="og:description" content="Get in touch with Frostberry Oven Lane — questions, recipe feedback, or brand partnerships.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://frostberryovenlane.com/contact.html">
+  <meta property="og:image" content="https://frostberryovenlane.com/images/oven-lane-hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Google Fonts: editorial serif + clean sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:opsz,wght@14..32,300..600;14..32,400..500&display=swap" rel="stylesheet">
+  <style>
+    /* ----- reset & base ----- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #fcf9f5;
+      color: #1e1c1a;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      font-weight: 400;
+      line-height: 1.6;
+      font-size: 1rem;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'DM Serif Display', Georgia, 'Times New Roman', serif;
+      font-weight: 400;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      color: #1e1c1a;
+    }
+
+    h1 { font-size: 2.6rem; }
+    h2 { font-size: 1.9rem; margin-bottom: 0.75rem; }
+    h3 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+    h4 { font-size: 1.15rem; }
+
+    a {
+      color: #1e1c1a;
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    a:hover {
+      color: #a5512e;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* ----- containers & layout ----- */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ----- header (identical to home) ----- */
+    .site-header {
+      border-bottom: 1px solid #e5dfd7;
+      padding: 1.2rem 0;
+      background: #fcf9f5;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.9rem;
+      letter-spacing: -0.02em;
+      color: #1e1c1a;
+      line-height: 1.1;
+    }
+
+    .logo span {
+      display: block;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #9a7f6b;
+      margin-top: 0.2rem;
+      font-weight: 400;
+    }
+
+    .main-nav ul {
+      display: flex;
+      gap: 1.8rem;
+      list-style: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+    }
+
+    .main-nav a {
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      letter-spacing: 0.06em;
+      color: #3d3732;
+    }
+
+    .main-nav a:hover {
+      color: #a5512e;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background: #f1ece6;
+      border-radius: 30px;
+      padding: 0.3rem 0.8rem;
+      border: 1px solid #e0d8ce;
+    }
+
+    .search-bar input {
+      background: transparent;
+      border: none;
+      padding: 0.4rem 0.4rem 0.4rem 0;
+      font-size: 0.9rem;
+      font-family: 'Inter', sans-serif;
+      outline: none;
+      width: 170px;
+      color: #1e1c1a;
+    }
+
+    .search-bar input::placeholder {
+      color: #9a8b7e;
+      font-style: italic;
+    }
+
+    .search-bar button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1.1rem;
+      color: #6b5d52;
+      padding: 0 0.2rem;
+    }
+
+    /* ----- contact page specific ----- */
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      margin: 3rem 0 4rem;
+      align-items: start;
+    }
+
+    .contact-intro {
+      background: #ffffff;
+      border: 1px solid #eae3db;
+      border-radius: 20px;
+      padding: 2.5rem 2rem;
+    }
+
+    .contact-intro h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-intro .subhead {
+      font-size: 1.1rem;
+      color: #5c534c;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #eee7e0;
+      padding-bottom: 1.2rem;
+    }
+
+    .contact-intro p {
+      margin-bottom: 1.2rem;
+      color: #3d3732;
+    }
+
+    .contact-detail {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.8rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .contact-detail .icon {
+      font-size: 1.4rem;
+      line-height: 1;
+      min-width: 2rem;
+      text-align: center;
+    }
+
+    .contact-detail strong {
+      display: block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #9a7f6b;
+      margin-bottom: 0.1rem;
+    }
+
+    .contact-detail span {
+      font-size: 1rem;
+      color: #1e1c1a;
+    }
+
+    .contact-note {
+      background: #f5efe9;
+      border-radius: 12px;
+      padding: 1.2rem 1.5rem;
+      margin-top: 1.8rem;
+      border-left: 4px solid #d4b9a8;
+    }
+
+    .contact-note p {
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+      color: #4d443d;
+    }
+
+    .contact-note p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ----- form card ----- */
+    .contact-form-card {
+      background: #ffffff;
+      border: 1px solid #eae3db;
+      border-radius: 20px;
+      padding: 2.5rem 2rem;
+    }
+
+    .contact-form-card h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .contact-form-card .form-sub {
+      font-size: 0.95rem;
+      color: #7e6e60;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #eee7e0;
+      padding-bottom: 1.2rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.4rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #5c534c;
+      margin-bottom: 0.4rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      border: 1px solid #d8cfc5;
+      border-radius: 10px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      background: #fcf9f5;
+      color: #1e1c1a;
+      outline: none;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: #a5512e;
+      box-shadow: 0 0 0 3px rgba(165, 81, 46, 0.08);
+      background: #ffffff;
+    }
+
+    .form-group textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    .form-group select {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236b5d52' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      cursor: pointer;
+    }
+
+    .form-group .hint {
+      font-size: 0.75rem;
+      color: #9a8b7e;
+      margin-top: 0.3rem;
+    }
+
+    .contact-form-card button {
+      background: #1e1c1a;
+      color: white;
+      border: none;
+      padding: 0.9rem 2rem;
+      border-radius: 50px;
+      font-weight: 500;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: background 0.15s;
+      font-family: 'Inter', sans-serif;
+      width: 100%;
+    }
+
+    .contact-form-card button:hover {
+      background: #a5512e;
+    }
+
+    .contact-form-card button:disabled {
+      background: #9a7f6b;
+      cursor: not-allowed;
+    }
+
+    .form-success {
+      display: none;
+      background: #f0f7f0;
+      border: 1px solid #c8e0c8;
+      border-radius: 12px;
+      padding: 1.2rem;
+      margin-top: 1.5rem;
+      text-align: center;
+      color: #2d5a2d;
+      font-size: 0.95rem;
+    }
+
+    .form-success.show {
+      display: block;
+    }
+
+    /* ----- footer (identical to home) ----- */
+    .site-footer {
+      background: #1e1c1a;
+      color: #d9d2cb;
+      padding: 3rem 0 2rem;
+      margin-top: 3rem;
+      font-size: 0.85rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+    }
+
+    .footer-col h4 {
+      color: #fcf9f5;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      font-family: 'DM Serif Display', serif;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-col a {
+      color: #b8aca1;
+    }
+
+    .footer-col a:hover {
+      color: #e6d9ce;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #3b3530;
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.75rem;
+      color: #9a8b7e;
+    }
+
+    /* ----- responsive ----- */
+    @media (max-width: 950px) {
+      .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.6rem; }
+
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .main-nav ul {
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .contact-intro,
+      .contact-form-card {
+        padding: 1.5rem;
+      }
+
+      .search-bar input {
+        width: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        Frostberry Oven Lane
+        <span>recipes & kitchen stories</span>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html">Categories</a></li>
+        </ul>
+      </nav>
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search recipes..." aria-label="Search recipes">
+        <button id="searchBtn" aria-label="Search">⌕</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== MAIN CONTACT ========== -->
+  <main class="container">
+    <div class="contact-wrapper">
+      <!-- LEFT: intro & contact details -->
+      <div class="contact-intro">
+        <h1>Let's talk</h1>
+        <p class="subhead">Questions, recipe feedback, or just saying hello — I'm here for it.</p>
+
+        <p>Whether you've tried a recipe and want to share how it went, need a substitution suggestion, or are interested in collaborating, I'd love to hear from you. I read every message myself (no assistants, no bots) and try to reply within a few days.</p>
+
+        <div class="contact-detail">
+          <div class="icon">✉️</div>
+          <div>
+            <strong>Email</strong>
+            <span>hello@frostberryovenlane.com</span>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="icon">📬</div>
+          <div>
+            <strong>Partnerships</strong>
+            <span>partners@frostberryovenlane.com</span>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="icon">📍</div>
+          <div>
+            <strong>Based in</strong>
+            <span>Pacific Northwest, USA</span>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="icon">📸</div>
+          <div>
+            <strong>Social</strong>
+            <span>@frostberryovenlane</span>
+          </div>
+        </div>
+
+        <div class="contact-note">
+          <p><strong>⏳ A note on response time</strong></p>
+          <p>I'm a one-person kitchen, so during busy baking seasons (holidays, sourdough September) it might take me a little longer to get back to you. Thanks for your patience — I promise I'm not ignoring you.</p>
+        </div>
+      </div>
+
+      <!-- RIGHT: contact form -->
+      <div class="contact-form-card">
+        <h2>Send a message</h2>
+        <p class="form-sub">Fill in the form and I'll get back to you as soon as I can.</p>
+
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Alex Rivera" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject" required>
+              <option value="" disabled selected>Choose a topic…</option>
+              <option value="recipe-question">Recipe question</option>
+              <option value="feedback">Recipe feedback</option>
+              <option value="substitution">Substitution help</option>
+              <option value="partnership">Brand partnership</option>
+              <option value="writing">Freelance / writing</option>
+              <option value="hello">Just saying hello</option>
+              <option value="other">Something else</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me what's on your mind…" required></textarea>
+            <div class="hint">If you're asking about a specific recipe, mentioning the recipe name helps me reply faster.</div>
+          </div>
+
+          <button type="submit" id="submitBtn">Send message</button>
+
+          <div class="form-success" id="formSuccess">
+            ✅ Thank you! Your message has been sent. I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Frostberry Oven Lane</h4>
+          <p style="color:#b8aca1; font-size:0.85rem; line-height:1.5;">Seasonal recipes and kitchen stories from a small oven on a quiet lane.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html?cat=baking">Baking</a></li>
+            <li><a href="categories.html?cat=dinner">Dinner</a></li>
+            <li><a href="categories.html?cat=seasonal">Seasonal</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Information</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">Substack</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Frostberry Oven Lane. All rights reserved.</span>
+        <span>Made with flour, butter, and patience.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT (contact page only) ========== -->
+  <script>
+    (function() {
+      // ----- search (minimal — redirects to home with query) -----
+      const searchInput = document.getElementById('searchInput');
+      const searchBtn = document.getElementById('searchBtn');
+
+      function performSearch() {
+        const term = searchInput.value.trim();
+        if (term !== '') {
+          window.location.href = 'index.html?search=' + encodeURIComponent(term);
+        } else {
+          window.location.href = 'index.html';
+        }
+      }
+
+      searchBtn.addEventListener('click', performSearch);
+      searchInput.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          performSearch();
+        }
+      });
+
+      // ----- contact form handling -----
+      const contactForm = document.getElementById('contactForm');
+      const submitBtn = document.getElementById('submitBtn');
+      const formSuccess = document.getElementById('formSuccess');
+
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        // collect data (in a real app you'd send it somewhere)
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value.trim();
+
+        // simple validation (HTML5 already does most)
+        if (!name || !email || !subject || !message) {
+          alert('Please fill in all fields.');
+          return;
+        }
+
+        // simulate sending
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending…';
+
+        setTimeout(function() {
+          // show success message
+          formSuccess.classList.add('show');
+          contactForm.reset();
+
+          // reset button
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Send message';
+
+          // hide success after 5 seconds
+          setTimeout(function() {
+            formSuccess.classList.remove('show');
+          }, 5000);
+        }, 800);
+      });
+
+      // small UX: clear success if user starts typing again
+      contactForm.addEventListener('input', function() {
+        formSuccess.classList.remove('show');
+      });
+
+      // pre-fill subject if URL has ?topic= (nice touch)
+      const urlParams = new URLSearchParams(window.location.search);
+      const topic = urlParams.get('topic');
+      if (topic) {
+        const subjectSelect = document.getElementById('subject');
+        if (subjectSelect) {
+          for (let i = 0; i < subjectSelect.options.length; i++) {
+            if (subjectSelect.options[i].value === topic) {
+              subjectSelect.selectedIndex = i;
+              break;
+            }
+          }
+        }
+      }
+    })();
+  </script>
+</body>
+</html>

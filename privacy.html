@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy • Frostberry Oven Lane</title>
+  <meta name="description" content="Privacy policy for Frostberry Oven Lane — how we collect, use, and protect your information.">
+  <link rel="canonical" href="https://frostberryovenlane.com/privacy.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Privacy Policy • Frostberry Oven Lane">
+  <meta property="og:description" content="How we collect, use, and protect your information.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://frostberryovenlane.com/privacy.html">
+  <meta property="og:image" content="https://frostberryovenlane.com/images/oven-lane-hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Google Fonts: editorial serif + clean sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:opsz,wght@14..32,300..600;14..32,400..500&display=swap" rel="stylesheet">
+  <style>
+    /* ----- reset & base ----- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #fcf9f5;
+      color: #1e1c1a;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      font-weight: 400;
+      line-height: 1.6;
+      font-size: 1rem;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'DM Serif Display', Georgia, 'Times New Roman', serif;
+      font-weight: 400;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      color: #1e1c1a;
+    }
+
+    h1 { font-size: 2.6rem; }
+    h2 { font-size: 1.9rem; margin-bottom: 0.75rem; }
+    h3 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+    h4 { font-size: 1.15rem; }
+
+    a {
+      color: #1e1c1a;
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    a:hover {
+      color: #a5512e;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* ----- containers & layout ----- */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ----- header (identical to home) ----- */
+    .site-header {
+      border-bottom: 1px solid #e5dfd7;
+      padding: 1.2rem 0;
+      background: #fcf9f5;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.9rem;
+      letter-spacing: -0.02em;
+      color: #1e1c1a;
+      line-height: 1.1;
+    }
+
+    .logo span {
+      display: block;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #9a7f6b;
+      margin-top: 0.2rem;
+      font-weight: 400;
+    }
+
+    .main-nav ul {
+      display: flex;
+      gap: 1.8rem;
+      list-style: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+    }
+
+    .main-nav a {
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      letter-spacing: 0.06em;
+      color: #3d3732;
+    }
+
+    .main-nav a:hover {
+      color: #a5512e;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background: #f1ece6;
+      border-radius: 30px;
+      padding: 0.3rem 0.8rem;
+      border: 1px solid #e0d8ce;
+    }
+
+    .search-bar input {
+      background: transparent;
+      border: none;
+      padding: 0.4rem 0.4rem 0.4rem 0;
+      font-size: 0.9rem;
+      font-family: 'Inter', sans-serif;
+      outline: none;
+      width: 170px;
+      color: #1e1c1a;
+    }
+
+    .search-bar input::placeholder {
+      color: #9a8b7e;
+      font-style: italic;
+    }
+
+    .search-bar button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1.1rem;
+      color: #6b5d52;
+      padding: 0 0.2rem;
+    }
+
+    /* ----- privacy page specific ----- */
+    .privacy-wrapper {
+      background: #ffffff;
+      border: 1px solid #eae3db;
+      border-radius: 24px;
+      padding: 3rem 3rem;
+      margin: 3rem 0 4rem;
+    }
+
+    .privacy-wrapper h1 {
+      font-size: 2.6rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .privacy-meta {
+      font-size: 0.95rem;
+      color: #7e6e60;
+      margin-bottom: 2.5rem;
+      border-bottom: 1px solid #eee7e0;
+      padding-bottom: 1.2rem;
+    }
+
+    .privacy-wrapper h2 {
+      font-size: 1.7rem;
+      margin-top: 2.2rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .privacy-wrapper h3 {
+      font-size: 1.25rem;
+      margin-top: 1.6rem;
+      margin-bottom: 0.5rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+
+    .privacy-wrapper p {
+      margin-bottom: 1.1rem;
+      color: #3d3732;
+    }
+
+    .privacy-wrapper ul,
+    .privacy-wrapper ol {
+      margin-bottom: 1.2rem;
+      padding-left: 1.8rem;
+      color: #3d3732;
+    }
+
+    .privacy-wrapper li {
+      margin-bottom: 0.4rem;
+    }
+
+    .privacy-wrapper strong {
+      color: #1e1c1a;
+      font-weight: 600;
+    }
+
+    .privacy-wrapper .highlight-box {
+      background: #f5efe9;
+      border-radius: 12px;
+      padding: 1.4rem 1.8rem;
+      margin: 1.8rem 0;
+      border-left: 4px solid #d4b9a8;
+    }
+
+    .privacy-wrapper .highlight-box p {
+      margin-bottom: 0.5rem;
+      font-size: 0.98rem;
+    }
+
+    .privacy-wrapper .highlight-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .privacy-wrapper hr {
+      border: none;
+      border-top: 1px solid #eee7e0;
+      margin: 2.5rem 0 1.5rem;
+    }
+
+    /* ----- footer (identical to home) ----- */
+    .site-footer {
+      background: #1e1c1a;
+      color: #d9d2cb;
+      padding: 3rem 0 2rem;
+      margin-top: 3rem;
+      font-size: 0.85rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+    }
+
+    .footer-col h4 {
+      color: #fcf9f5;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      font-family: 'DM Serif Display', serif;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-col a {
+      color: #b8aca1;
+    }
+
+    .footer-col a:hover {
+      color: #e6d9ce;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #3b3530;
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.75rem;
+      color: #9a8b7e;
+    }
+
+    /* ----- responsive ----- */
+    @media (max-width: 950px) {
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .privacy-wrapper {
+        padding: 2rem 1.8rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.6rem; }
+
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .main-nav ul {
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .privacy-wrapper {
+        padding: 1.5rem;
+      }
+
+      .search-bar input {
+        width: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        Frostberry Oven Lane
+        <span>recipes & kitchen stories</span>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html">Categories</a></li>
+        </ul>
+      </nav>
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search recipes..." aria-label="Search recipes">
+        <button id="searchBtn" aria-label="Search">⌕</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== MAIN PRIVACY ========== -->
+  <main class="container">
+    <div class="privacy-wrapper">
+      <h1>Privacy Policy</h1>
+      <div class="privacy-meta">
+        Last updated: <strong>March 12, 2025</strong> &nbsp;·&nbsp; Effective: <strong>March 12, 2025</strong>
+      </div>
+
+      <p>At <strong>Frostberry Oven Lane</strong> (accessible via <a href="https://frostberryovenlane.com">frostberryovenlane.com</a>), the privacy of our visitors is one of our main priorities. This Privacy Policy document explains what information we collect, how we use it, and what rights you have regarding your personal data.</p>
+
+      <p>If you have additional questions or require more information about our Privacy Policy, feel free to contact us at <strong>hello@frostberryovenlane.com</strong>.</p>
+
+      <div class="highlight-box">
+        <p><strong>📌 The short version:</strong> We collect minimal data. We never sell your personal information. We use basic analytics and cookies to understand what recipes people love, and we only send emails if you explicitly ask for them.</p>
+      </div>
+
+      <h2>1. Information we collect</h2>
+      <p>We collect information in two ways: information you voluntarily provide, and information automatically collected through your use of the site.</p>
+
+      <h3>Information you provide to us</h3>
+      <ul>
+        <li><strong>Contact form submissions:</strong> When you use our <a href="contact.html">contact form</a>, we collect your name, email address, subject, and the content of your message. This is used solely to respond to your inquiry.</li>
+        <li><strong>Newsletter subscription:</strong> If you subscribe to our newsletter, we collect your email address (and optionally your first name). You can unsubscribe at any time using the link in every email.</li>
+        <li><strong>Comments:</strong> If you leave a comment on a recipe or article, we collect the data shown in the comment form (name, email, comment text). Your email is never published publicly.</li>
+      </ul>
+
+      <h3>Information collected automatically</h3>
+      <p>Like most websites, we use log files and analytics tools. This may include:</p>
+      <ul>
+        <li>IP address (anonymized where possible)</li>
+        <li>Browser type and version</li>
+        <li>Operating system</li>
+        <li>Referring pages and exit pages</li>
+        <li>Date and time stamps</li>
+        <li>Number of clicks and pages visited</li>
+      </ul>
+      <p>This information is not linked to any personally identifiable information. It helps us understand which recipes are popular and how to improve the site.</p>
+
+      <h2>2. How we use your information</h2>
+      <p>We use the information we collect in the following ways:</p>
+      <ul>
+        <li>To respond to your questions, comments, and requests.</li>
+        <li>To send you newsletters and updates <em>only if you have opted in</em>.</li>
+        <li>To improve, personalize, and expand our website and recipe content.</li>
+        <li>To understand how visitors use the site (via aggregated analytics).</li>
+        <li>To detect and prevent fraudulent or abusive behavior.</li>
+        <li>To comply with legal obligations.</li>
+      </ul>
+
+      <h2>3. Cookies and web beacons</h2>
+      <p>Frostberry Oven Lane uses cookies to store information about visitors' preferences and to record which pages the visitor accessed or visited. This information is used to optimize the user experience by customizing content based on browser type and other information.</p>
+      <p>You can choose to disable cookies through your browser settings. For more detailed information about cookie management with specific browsers, please refer to the browser's respective website. For a full breakdown of the cookies we use, please see our <a href="cookies.html">Cookie Policy</a>.</p>
+
+      <h2>4. Third-party services</h2>
+      <p>We may use third-party services that collect, monitor, and analyze data to improve our service. These currently include:</p>
+      <ul>
+        <li><strong>Google Analytics:</strong> For understanding site traffic and user behavior. Google's privacy policy applies to data processed by this service.</li>
+        <li><strong>Email service provider (e.g., Mailchimp or Substack):</strong> For managing our newsletter. Your email address is stored securely with this provider.</li>
+        <li><strong>Hosting provider:</strong> Our website is hosted by a third-party provider that may process server logs.</li>
+      </ul>
+      <p>These third parties have their own privacy policies, and we encourage you to review them. We do not sell, trade, or rent your personal information to anyone.</p>
+
+      <h2>5. Your data protection rights</h2>
+      <p>Depending on your location, you may have the following rights regarding your personal data:</p>
+      <ul>
+        <li><strong>Right to access:</strong> You can request copies of your personal data.</li>
+        <li><strong>Right to rectification:</strong> You can request that we correct inaccurate information.</li>
+        <li><strong>Right to erasure:</strong> You can request that we delete your personal data, under certain conditions.</li>
+        <li><strong>Right to restrict processing:</strong> You can request that we restrict the processing of your data, under certain conditions.</li>
+        <li><strong>Right to object to processing:</strong> You can object to our processing of your data, under certain conditions.</li>
+        <li><strong>Right to data portability:</strong> You can request that we transfer collected data to another organization, or to you.</li>
+      </ul>
+      <p>If you make a request, we have one month to respond. To exercise any of these rights, please contact us at <strong>hello@frostberryovenlane.com</strong>.</p>
+
+      <h2>6. Children's information</h2>
+      <p>Protecting children online is important. We encourage parents and guardians to observe, participate in, and/or monitor and guide their children's online activity.</p>
+      <p>Frostberry Oven Lane does not knowingly collect any personally identifiable information from children under the age of 13. If you believe your child provided this kind of information on our website, please contact us immediately and we will do our best to promptly remove such information from our records.</p>
+
+      <h2>7. Data retention</h2>
+      <p>We retain contact form submissions and email correspondence only as long as necessary to fulfill the purpose for which it was collected, or to comply with legal obligations. Newsletter subscriptions are retained until you unsubscribe. Analytics data is retained in aggregated, anonymized form.</p>
+
+      <h2>8. Security</h2>
+      <p>We take reasonable measures to protect the information we collect. Our website uses HTTPS encryption, and we limit access to personal data to those who need it to operate the site. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.</p>
+
+      <h2>9. External links</h2>
+      <p>Our website may contain links to external sites that are not operated by us. If you click a third-party link, you will be directed to that site. We strongly advise you to review the privacy policy of every site you visit. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party sites or services.</p>
+
+      <h2>10. Changes to this policy</h2>
+      <p>We may update this Privacy Policy from time to time. When we do, we will revise the "Last updated" date at the top of this page. We encourage you to review this page periodically to stay informed about how we are protecting your information.</p>
+
+      <h2>11. Contact us</h2>
+      <p>If you have questions about this Privacy Policy, or if you would like to exercise any of your data protection rights, please contact us:</p>
+      <ul>
+        <li><strong>Email:</strong> hello@frostberryovenlane.com</li>
+        <li><strong>Contact form:</strong> <a href="contact.html">frostberryovenlane.com/contact</a></li>
+      </ul>
+
+      <hr>
+      <p style="font-size:0.9rem; color:#7e6e60; text-align:center; margin-bottom:0;">Thank you for trusting Frostberry Oven Lane with your kitchen adventures. 🥐</p>
+    </div>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Frostberry Oven Lane</h4>
+          <p style="color:#b8aca1; font-size:0.85rem; line-height:1.5;">Seasonal recipes and kitchen stories from a small oven on a quiet lane.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html?cat=baking">Baking</a></li>
+            <li><a href="categories.html?cat=dinner">Dinner</a></li>
+            <li><a href="categories.html?cat=seasonal">Seasonal</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Information</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">Substack</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Frostberry Oven Lane. All rights reserved.</span>
+        <span>Made with flour, butter, and patience.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT (search only) ========== -->
+  <script>
+    (function() {
+      // ----- search (minimal — redirects to home with query) -----
+      const searchInput = document.getElementById('searchInput');
+      const searchBtn = document.getElementById('searchBtn');
+
+      function performSearch() {
+        const term = searchInput.value.trim();
+        if (term !== '') {
+          window.location.href = 'index.html?search=' + encodeURIComponent(term);
+        } else {
+          window.location.href = 'index.html';
+        }
+      }
+
+      searchBtn.addEventListener('click', performSearch);
+      searchInput.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          performSearch();
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

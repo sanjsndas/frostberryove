@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories • Frostberry Oven Lane</title>
+  <meta name="description" content="Browse all recipe categories on Frostberry Oven Lane — baking, dinner, seasonal, and more.">
+  <link rel="canonical" href="https://frostberryovenlane.com/categories.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Categories • Frostberry Oven Lane">
+  <meta property="og:description" content="Browse all recipe categories on Frostberry Oven Lane.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://frostberryovenlane.com/categories.html">
+  <meta property="og:image" content="https://frostberryovenlane.com/images/oven-lane-hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Categories — Frostberry Oven Lane",
+    "url": "https://frostberryovenlane.com/categories.html",
+    "description": "Browse all recipe categories on Frostberry Oven Lane."
+  }
+  </script>
+  <!-- Google Fonts: editorial serif + clean sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:opsz,wght@14..32,300..600;14..32,400..500&display=swap" rel="stylesheet">
+  <style>
+    /* ----- reset & base (same as original) ----- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #fcf9f5;
+      color: #1e1c1a;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      font-weight: 400;
+      line-height: 1.6;
+      font-size: 1rem;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'DM Serif Display', Georgia, 'Times New Roman', serif;
+      font-weight: 400;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      color: #1e1c1a;
+    }
+
+    h1 { font-size: 2.6rem; }
+    h2 { font-size: 1.9rem; margin-bottom: 0.75rem; }
+    h3 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+    h4 { font-size: 1.15rem; }
+
+    a {
+      color: #1e1c1a;
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    a:hover {
+      color: #a5512e;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* ----- containers & layout ----- */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ----- header (same as original) ----- */
+    .site-header {
+      border-bottom: 1px solid #e5dfd7;
+      padding: 1.2rem 0;
+      background: #fcf9f5;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.9rem;
+      letter-spacing: -0.02em;
+      color: #1e1c1a;
+      line-height: 1.1;
+    }
+
+    .logo span {
+      display: block;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #9a7f6b;
+      margin-top: 0.2rem;
+      font-weight: 400;
+    }
+
+    .main-nav ul {
+      display: flex;
+      gap: 1.8rem;
+      list-style: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+    }
+
+    .main-nav a {
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      letter-spacing: 0.06em;
+      color: #3d3732;
+    }
+
+    .main-nav a:hover {
+      color: #a5512e;
+    }
+
+    .main-nav a.active {
+      color: #a5512e;
+      font-weight: 600;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background: #f1ece6;
+      border-radius: 30px;
+      padding: 0.3rem 0.8rem;
+      border: 1px solid #e0d8ce;
+    }
+
+    .search-bar input {
+      background: transparent;
+      border: none;
+      padding: 0.4rem 0.4rem 0.4rem 0;
+      font-size: 0.9rem;
+      font-family: 'Inter', sans-serif;
+      outline: none;
+      width: 170px;
+      color: #1e1c1a;
+    }
+
+    .search-bar input::placeholder {
+      color: #9a8b7e;
+      font-style: italic;
+    }
+
+    .search-bar button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1.1rem;
+      color: #6b5d52;
+      padding: 0 0.2rem;
+    }
+
+    /* ----- CATEGORIES PAGE specific ----- */
+    .categories-wrapper {
+      margin: 2.5rem 0 3.5rem;
+    }
+
+    .categories-header {
+      margin-bottom: 2.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #ede7e0;
+    }
+
+    .categories-header h1 {
+      font-size: 2.6rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .categories-header .meta {
+      font-size: 0.9rem;
+      color: #7a6e64;
+      letter-spacing: 0.01em;
+    }
+
+    .categories-intro {
+      font-size: 1.1rem;
+      color: #4a423c;
+      margin-bottom: 2.5rem;
+      line-height: 1.7;
+      max-width: 720px;
+    }
+
+    /* ----- category grid ----- */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.8rem;
+    }
+
+    .category-card {
+      background: #ffffff;
+      border: 1px solid #eae3db;
+      border-radius: 20px;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .category-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px rgba(30, 28, 26, 0.07);
+      border-color: #d4b9a8;
+    }
+
+    .category-card-image {
+      aspect-ratio: 4 / 3;
+      background: #f1ece6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3.2rem;
+      color: #b8a99b;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .category-card-image span {
+      position: relative;
+      z-index: 1;
+      transition: transform 0.3s ease;
+    }
+
+    .category-card:hover .category-card-image span {
+      transform: scale(1.05);
+    }
+
+    .category-card-body {
+      padding: 1.5rem 1.5rem 1.8rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .category-card-body h3 {
+      font-size: 1.35rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .category-card-body p {
+      color: #6b5d52;
+      font-size: 0.92rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      flex: 1;
+    }
+
+    .category-card-body .count {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #9a7f6b;
+      font-weight: 500;
+    }
+
+    .category-card-body .count::after {
+      content: " →";
+      transition: margin-left 0.2s;
+      display: inline-block;
+    }
+
+    .category-card:hover .category-card-body .count::after {
+      margin-left: 4px;
+    }
+
+    /* ----- empty state / CTA ----- */
+    .categories-cta {
+      margin-top: 3rem;
+      background: #f9f5f1;
+      border: 1px solid #eae3db;
+      border-radius: 20px;
+      padding: 2.5rem 2rem;
+      text-align: center;
+    }
+
+    .categories-cta p {
+      color: #4a423c;
+      font-size: 1rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .categories-cta a {
+      display: inline-block;
+      background: #1e1c1a;
+      color: #fcf9f5;
+      padding: 0.7rem 1.8rem;
+      border-radius: 40px;
+      font-size: 0.85rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-weight: 500;
+      transition: background 0.2s;
+    }
+
+    .categories-cta a:hover {
+      background: #a5512e;
+      color: #ffffff;
+    }
+
+    /* ----- footer (same as original) ----- */
+    .site-footer {
+      background: #1e1c1a;
+      color: #d9d2cb;
+      padding: 3rem 0 2rem;
+      margin-top: 3rem;
+      font-size: 0.85rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+    }
+
+    .footer-col h4 {
+      color: #fcf9f5;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      font-family: 'DM Serif Display', serif;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-col a {
+      color: #b8aca1;
+    }
+
+    .footer-col a:hover {
+      color: #e6d9ce;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #3b3530;
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.75rem;
+      color: #9a8b7e;
+    }
+
+    /* ----- responsive ----- */
+    @media (max-width: 950px) {
+      .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.6rem; }
+
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .main-nav ul {
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .search-bar input {
+        width: 120px;
+      }
+
+      .category-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .categories-header h1 {
+        font-size: 1.9rem;
+      }
+
+      .categories-cta {
+        padding: 1.8rem 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        Frostberry Oven Lane
+        <span>recipes & kitchen stories</span>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html" class="active">Categories</a></li>
+        </ul>
+      </nav>
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search recipes..." aria-label="Search recipes">
+        <button id="searchBtn" aria-label="Search">⌕</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== MAIN ========== -->
+  <main class="container">
+    <div class="categories-wrapper">
+      <div class="categories-header">
+        <h1>Categories</h1>
+        <p class="meta">Browse recipes by type, season, and mood · Frostberry Oven Lane</p>
+      </div>
+
+      <div class="categories-intro">
+        <p>From slow weekend baking to quick weeknight dinners, everything here is organised so you can find exactly what you're craving. Each category is a little world of its own — pick one and start exploring.</p>
+      </div>
+
+      <!-- Category Grid -->
+      <div class="category-grid">
+        <!-- Baking -->
+        <a href="#" class="category-card">
+          <div class="category-card-image">
+            <span>🍞</span>
+          </div>
+          <div class="category-card-body">
+            <h3>Baking</h3>
+            <p>Bread, cakes, cookies, and pastries — the heart of the oven lane. Simple techniques and honest results.</p>
+            <span class="count">24 recipes</span>
+          </div>
+        </a>
+
+        <!-- Dinner -->
+        <a href="#" class="category-card">
+          <div class="category-card-image">
+            <span>🍲</span>
+          </div>
+          <div class="category-card-body">
+            <h3>Dinner</h3>
+            <p>Comforting mains, one-pot wonders, and seasonal suppers for any night of the week.</p>
+            <span class="count">18 recipes</span>
+          </div>
+        </a>
+
+        <!-- Seasonal -->
+        <a href="#" class="category-card">
+          <div class="category-card-image">
+            <span>🍂</span>
+          </div>
+          <div class="category-card-body">
+            <h3>Seasonal</h3>
+            <p>Recipes that follow the rhythm of the year — spring greens, summer berries, autumn squash, winter citrus.</p>
+            <span class="count">15 recipes</span>
+          </div>
+        </a>
+
+        <!-- Breakfast -->
+        <a href="#" class="category-card">
+          <div class="category-card-image">
+            <span>🥞</span>
+          </div>
+          <div class="category-card-body">
+            <h3>Breakfast</h3>
+            <p>Slow mornings, quick weekday fuel, and everything in between. Eggs, oats, pancakes, and more.</p>
+            <span class="count">12 recipes</span>
+          </div>
+        </a>
+
+        <!-- Soups & Stews -->
+        <a href="#" class="category-card">
+          <div class="category-card-image">
+            <span>🥣</span>
+          </div>
+          <div class="category-card-body">
+            <h3>Soups & Stews</h3>
+            <p>Bowls of warmth for chilly days. From brothy to creamy, spicy to soothing.</p>
+            <span class="count">10 recipes</span>
+          </div>
+        </a>
+
+        <!-- Salads -->
+        <a href="#" class="category-card">
+          <div class="category-card-image">
+            <span>🥗</span>
+          </div>
+          <div class="category-card-body">
+            <h3>Salads</h3>
+            <p>Fresh, crunchy, and sometimes warm. Salads that are meals in their own right.</p>
+            <span class="count">8 recipes</span>
+          </div>
+        </a>
+
+        <!-- Desserts -->
+        <a href="#" class="category-card">
+          <div class="category-card-image">
+            <span>🍰</span>
+          </div>
+          <div class="category-card-body">
+            <h3>Desserts</h3>
+            <p>Cakes, crumbles, custards, and chocolate things. Because every meal deserves a sweet ending.</p>
+            <span class="count">16 recipes</span>
+          </div>
+        </a>
+
+        <!-- Drinks -->
+        <a href="#" class="category-card">
+          <div class="category-card-image">
+            <span>☕</span>
+          </div>
+          <div class="category-card-body">
+            <h3>Drinks</h3>
+            <p>Warm mugs, cold glasses, and seasonal sips — from teas and coffees to homemade sodas.</p>
+            <span class="count">7 recipes</span>
+          </div>
+        </a>
+
+        <!-- Kitchen Stories -->
+        <a href="#" class="category-card">
+          <div class="category-card-image">
+            <span>📖</span>
+          </div>
+          <div class="category-card-body">
+            <h3>Kitchen Stories</h3>
+            <p>Notes from the lane — essays, tips, and little moments that happen between recipes.</p>
+            <span class="count">11 stories</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- CTA / more -->
+      <div class="categories-cta">
+        <p>Can't decide? Start with the newest recipes or browse everything in one place.</p>
+        <a href="#">View all recipes</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Frostberry Oven Lane</h4>
+          <p style="color:#b8aca1; font-size:0.85rem; line-height:1.5;">Seasonal recipes and kitchen stories from a small oven on a quiet lane.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Baking</a></li>
+            <li><a href="categories.html">Dinner</a></li>
+            <li><a href="categories.html">Seasonal</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Information</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">Substack</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Frostberry Oven Lane. All rights reserved.</span>
+        <span>Made with flour, butter, and patience.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT (minimal, for search + active nav) ========== -->
+  <script>
+    (function() {
+      // Simple search interaction (placeholder)
+      const searchInput = document.getElementById('searchInput');
+      const searchBtn = document.getElementById('searchBtn');
+
+      function handleSearch() {
+        const term = searchInput.value.trim();
+        if (term) {
+          alert('Search is available on the home page. Redirecting you there with your query: "' + term + '"');
+          // In a real setup: window.location.href = 'index.html?search=' + encodeURIComponent(term);
+        } else {
+          searchInput.focus();
+        }
+      }
+
+      if (searchBtn) {
+        searchBtn.addEventListener('click', handleSearch);
+      }
+      if (searchInput) {
+        searchInput.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter') {
+            e.preventDefault();
+            handleSearch();
+          }
+        });
+      }
+
+      // Set active nav link (already set in HTML, but just in case)
+      document.querySelectorAll('.main-nav a').forEach(link => {
+        if (link.getAttribute('href') === 'categories.html') {
+          link.classList.add('active');
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
